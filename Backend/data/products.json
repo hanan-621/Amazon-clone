@@ -1,0 +1,687 @@
+[
+  {
+    "title": "NovaSound Wireless Bluetooth Headphones",
+    "description": "High-definition active noise-cancelling wireless headphones with 30-hour battery life, comfortable ear cushions, and deep bass sound.",
+    "price": 129.99,
+    "image": "/images/products/headphones.jpg",
+    "category": "Electronics",
+    "rating": {
+      "rate": 4.5,
+      "count": 182
+    },
+    "stock": 25,
+    "brand": "NovaSound",
+    "oldPrice": 155.99,
+    "reviewCount": 182,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "Apex Smart Fitness Watch Series 5",
+    "description": "Advanced health tracking smartwatch featuring heart rate monitoring, sleep analysis, GPS, and a bright AMOLED touchscreen display.",
+    "price": 199.5,
+    "image": "/images/products/smartwatch.jpg",
+    "category": "Electronics",
+    "rating": {
+      "rate": 4.7,
+      "count": 310
+    },
+    "stock": 15,
+    "brand": "Apex",
+    "oldPrice": 239.4,
+    "reviewCount": 310,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "UltraVision 4K Action Camera Pro",
+    "description": "Waterproof 4K ultra-HD action camera with dual screens, electronic image stabilization, and wide-angle lens for outdoor adventures.",
+    "price": 249.0,
+    "image": "/images/products/camera.jpg",
+    "category": "Electronics",
+    "rating": {
+      "rate": 4.3,
+      "count": 94
+    },
+    "stock": 10,
+    "brand": "UltraVision",
+    "oldPrice": 298.8,
+    "reviewCount": 94,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "CyberPulse RGB Mechanical Gaming Keyboard",
+    "description": "Responsive mechanical keyboard with customizable RGB backlighting, anti-ghosting keys, and durable aluminum frame for gamers.",
+    "price": 89.99,
+    "image": "/images/products/keyboard.jpg",
+    "category": "Electronics",
+    "rating": {
+      "rate": 4.6,
+      "count": 215
+    },
+    "stock": 40,
+    "brand": "CyberPulse",
+    "oldPrice": 107.99,
+    "reviewCount": 215,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "PulsePro Portable Bluetooth Speaker",
+    "description": "Compact and waterproof wireless speaker delivering 360-degree rich stereo sound with 12 hours of continuous playtime.",
+    "price": 59.99,
+    "image": "/images/products/speaker.jpg",
+    "category": "Electronics",
+    "rating": {
+      "rate": 4.4,
+      "count": 142
+    },
+    "stock": 30,
+    "brand": "PulsePro",
+    "oldPrice": 71.99,
+    "reviewCount": 142,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "AuraClassic Men's Slim Fit Leather Jacket",
+    "description": "Premium faux leather jacket featuring a modern slim fit, smooth inner lining, durable zipper, and classic biker styling for everyday wear.",
+    "price": 89.99,
+    "image": "/images/products/Leather_jacket.jpg",
+    "category": "Fashion",
+    "rating": {
+      "rate": 4.6,
+      "count": 120
+    },
+    "stock": 20,
+    "brand": "AuraClassic",
+    "oldPrice": 107.99,
+    "reviewCount": 120,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "UrbanStride Casual Canvas Sneakers",
+    "description": "Comfortable and lightweight unisex canvas sneakers designed with breathable fabric and anti-slip rubber soles for daily casual use.",
+    "price": 45.0,
+    "image": "/images/products/sneakers.jpg",
+    "category": "Fashion",
+    "rating": {
+      "rate": 4.4,
+      "count": 230
+    },
+    "stock": 35,
+    "brand": "UrbanStride",
+    "oldPrice": 54.0,
+    "reviewCount": 230,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "Lumina Classic Analog Quartz Watch",
+    "description": "Elegant minimalist wrist watch with a genuine leather strap, scratch-resistant mineral glass, and water-resistant stainless steel casing.",
+    "price": 75.5,
+    "image": "/images/products/fashion_watch.jpg",
+    "category": "Fashion",
+    "rating": {
+      "rate": 4.7,
+      "count": 95
+    },
+    "stock": 18,
+    "brand": "Lumina",
+    "oldPrice": 90.6,
+    "reviewCount": 95,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "VogueCraft Vintage Leather Crossbody Bag",
+    "description": "Handcrafted genuine leather shoulder bag featuring multiple spacious compartments, adjustable strap, and a timeless vintage aesthetic.",
+    "price": 110.0,
+    "image": "/images/products/crossbody_bag.jpg",
+    "category": "Fashion",
+    "rating": {
+      "rate": 4.5,
+      "count": 88
+    },
+    "stock": 12,
+    "brand": "VogueCraft",
+    "oldPrice": 132.0,
+    "reviewCount": 88,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "Zenith Polarized UV400 Sunglasses",
+    "description": "Classic aviator sunglasses equipped with polarized UV400 lenses to reduce glare and offer complete protection against harmful sun rays.",
+    "price": 35.99,
+    "image": "/images/products/sunglasses.jpg",
+    "category": "Fashion",
+    "rating": {
+      "rate": 4.3,
+      "count": 160
+    },
+    "stock": 40,
+    "brand": "Zenith",
+    "oldPrice": 43.19,
+    "reviewCount": 160,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "AeroBrew 12-Cup Programmable Coffee Maker",
+    "description": "Modern coffee machine featuring a programmable timer, anti-drip system, reusable filter basket, and a keep-warm glass carafe.",
+    "price": 69.99,
+    "image": "/images/products/coffee_maker.jpg",
+    "category": "Home & Kitchen",
+    "rating": {
+      "rate": 4.5,
+      "count": 140
+    },
+    "stock": 25,
+    "brand": "AeroBrew",
+    "oldPrice": 83.99,
+    "reviewCount": 140,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "ChefMaster 5-Piece Stainless Steel Knife Set",
+    "description": "Professional-grade kitchen knives with razor-sharp high-carbon stainless steel blades and ergonomic non-slip handles for precise cutting.",
+    "price": 49.99,
+    "image": "/images/products/knife_set.jpg",
+    "category": "Home & Kitchen",
+    "rating": {
+      "rate": 4.7,
+      "count": 210
+    },
+    "stock": 30,
+    "brand": "ChefMaster",
+    "oldPrice": 59.99,
+    "reviewCount": 210,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "VibrantGlow Ceramic Table Lamp",
+    "description": "Elegant bedside and living room table lamp with a handcrafted ceramic base, textured fabric shade, and warm ambient lighting.",
+    "price": 38.5,
+    "image": "/images/products/table_lamp.jpg",
+    "category": "Home & Kitchen",
+    "rating": {
+      "rate": 4.4,
+      "count": 95
+    },
+    "stock": 20,
+    "brand": "VibrantGlow",
+    "oldPrice": 46.2,
+    "reviewCount": 95,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "PureAir Ultrasonic Essential Oil Diffuser",
+    "description": "Quiet aromatherapy diffuser and cool mist humidifier featuring soothing LED mood lights and auto shut-off safety protection.",
+    "price": 29.99,
+    "image": "/images/products/diffuser.jpg",
+    "category": "Home & Kitchen",
+    "rating": {
+      "rate": 4.6,
+      "count": 180
+    },
+    "stock": 40,
+    "brand": "PureAir",
+    "oldPrice": 35.99,
+    "reviewCount": 180,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "EcoBake Non-Stick Silicone Baking Mat Set",
+    "description": "Heat-resistant, reusable food-grade silicone baking liners designed for even heat distribution and effortless food release.",
+    "price": 19.99,
+    "image": "/images/products/baking_mat.jpg",
+    "category": "Home & Kitchen",
+    "rating": {
+      "rate": 4.8,
+      "count": 310
+    },
+    "stock": 50,
+    "brand": "EcoBake",
+    "oldPrice": 23.99,
+    "reviewCount": 310,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "The Mountain Is You: Transforming Self-Sabotage Into Self-Mastery",
+    "author": "Brianna Wiest",
+    "description": "A self-development book that explores the patterns behind self-sabotage and offers ideas for overcoming internal obstacles and building greater self-mastery.",
+    "price": 13.78,
+    "image": "/images/products/the_mountain_is_you.jpg",
+    "category": "Books",
+    "rating": {
+      "rate": 4.7,
+      "count": 340
+    },
+    "stock": 30,
+    "brand": "Self-Mastery Books",
+    "oldPrice": 16.54,
+    "reviewCount": 340,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "Die with Zero: Getting All You Can Out of Your Money and Your Life",
+    "author": "Bill Perkins",
+    "description": "A personal finance and life-planning book that argues for using money to create meaningful experiences throughout life rather than focusing only on accumulating wealth.",
+    "price": 18.89,
+    "image": "/images/products/die_with_zero.jpg",
+    "category": "Books",
+    "rating": {
+      "rate": 4.4,
+      "count": 290
+    },
+    "stock": 25,
+    "brand": "Die with Zero",
+    "oldPrice": 22.67,
+    "reviewCount": 290,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "The Comfort Crisis: Embrace Discomfort to Reclaim Your Wild, Happy, Healthy Self",
+    "author": "Michael Easter",
+    "description": "An exploration of modern comfort, physical challenges, and the potential benefits of deliberately experiencing discomfort and outdoor adventure.",
+    "price": 15.75,
+    "image": "/images/products/the_comfort_crisis.jpg",
+    "category": "Books",
+    "rating": {
+      "rate": 4.7,
+      "count": 215
+    },
+    "stock": 20,
+    "brand": "Comfort Crisis",
+    "oldPrice": 18.9,
+    "reviewCount": 215,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "Before the Coffee Gets Cold",
+    "author": "Toshikazu Kawaguchi",
+    "description": "A Japanese novel about a small café where visitors can travel back in time under a set of unusual rules, exploring love, loss, regret, and human relationships.",
+    "price": 13.99,
+    "image": "/images/products/before_coffee_gets_cold.jpg",
+    "category": "Books",
+    "rating": {
+      "rate": 4.6,
+      "count": 420
+    },
+    "stock": 35,
+    "brand": "Before the Coffee Gets Cold",
+    "oldPrice": 16.79,
+    "reviewCount": 420,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "The House in the Cerulean Sea",
+    "author": "TJ Klune",
+    "description": "A fantasy novel about a caseworker who visits a mysterious orphanage and forms an unexpected connection with its unusual residents.",
+    "price": 16.99,
+    "image": "/images/products/cerulean_sea.jpg",
+    "category": "Books",
+    "rating": {
+      "rate": 4.8,
+      "count": 380
+    },
+    "stock": 40,
+    "brand": "Cerulean Sea",
+    "oldPrice": 20.39,
+    "reviewCount": 380,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "Radiant Glow Botanical Facial Cleanser",
+    "description": "Gentle organic facial cleanser infused with green tea and aloe vera extracts for deep hydration and daily skin nourishment.",
+    "price": 22.99,
+    "image": "/images/products/facial_cleanser.jpg",
+    "category": "Beauty",
+    "rating": {
+      "rate": 4.8,
+      "count": 230
+    },
+    "stock": 35,
+    "brand": "Radiant Glow",
+    "oldPrice": 27.59,
+    "reviewCount": 230,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "Velvet Touch Matte Lipstick Collection",
+    "description": "Long-lasting, highly pigmented matte lipstick set with lightweight and moisturizing formula.",
+    "price": 18.5,
+    "image": "/images/products/matte_lipstick.jpg",
+    "category": "Beauty",
+    "rating": {
+      "rate": 4.6,
+      "count": 190
+    },
+    "stock": 40,
+    "brand": "Velvet Touch",
+    "oldPrice": 22.2,
+    "reviewCount": 190,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "HydraBoost Hyaluronic Acid Serum",
+    "description": "Intense facial serum designed to smooth fine lines, restore moisture barrier, and give skin a youthful glow.",
+    "price": 29.99,
+    "image": "/images/products/face_serum.jpg",
+    "category": "Beauty",
+    "rating": {
+      "rate": 4.9,
+      "count": 310
+    },
+    "stock": 25,
+    "brand": "HydraBoost",
+    "oldPrice": 35.99,
+    "reviewCount": 310,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "Luxe Professional Makeup Brush Set",
+    "description": "Premium synthetic vegan makeup brushes with ergonomic wooden handles for flawless application.",
+    "price": 34.0,
+    "image": "/images/products/makeup_brushes.jpg",
+    "category": "Beauty",
+    "rating": {
+      "rate": 4.7,
+      "count": 150
+    },
+    "stock": 30,
+    "brand": "Luxe Professional",
+    "oldPrice": 40.8,
+    "reviewCount": 150,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "Aura Botanical Scented Body Butter",
+    "description": "Deeply nourishing shea butter body cream infused with soothing lavender and vanilla essential oils.",
+    "price": 19.99,
+    "image": "/images/products/body_butter.jpg",
+    "category": "Beauty",
+    "rating": {
+      "rate": 4.8,
+      "count": 180
+    },
+    "stock": 45,
+    "brand": "Aura Botanical",
+    "oldPrice": 23.99,
+    "reviewCount": 180,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "Creative Master Building Blocks Set",
+    "description": "Colorful educational brick building set designed to stimulate creativity and fine motor skills in children.",
+    "price": 39.99,
+    "image": "/images/products/building_blocks.jpg",
+    "category": "Toys and Games",
+    "rating": {
+      "rate": 4.9,
+      "count": 420
+    },
+    "stock": 30,
+    "brand": "Creative Master",
+    "oldPrice": 47.99,
+    "reviewCount": 420,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "Speedster Remote Control Racing Car",
+    "description": "High-speed 1:18 scale RC car featuring durable shock absorbers and responsive 2.4GHz remote controller.",
+    "price": 49.99,
+    "image": "/images/products/racing_car.jpg",
+    "category": "Toys and Games",
+    "rating": {
+      "rate": 4.7,
+      "count": 280
+    },
+    "stock": 20,
+    "brand": "Speedster",
+    "oldPrice": 59.99,
+    "reviewCount": 280,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "Strategy Quest Family Board Game",
+    "description": "An engaging tabletop strategy game for family and friends filled with adventure and tactical challenges.",
+    "price": 29.99,
+    "image": "/images/products/board_game.jpg",
+    "category": "Toys and Games",
+    "rating": {
+      "rate": 4.8,
+      "count": 310
+    },
+    "stock": 25,
+    "brand": "Strategy Quest",
+    "oldPrice": 35.99,
+    "reviewCount": 310,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "CuddleSoft Plush Teddy Bear",
+    "description": "Ultra-soft and huggable stuffed teddy bear crafted with safe, hypoallergenic materials for kids.",
+    "price": 24.5,
+    "image": "/images/products/teddy_bear.jpg",
+    "category": "Toys and Games",
+    "rating": {
+      "rate": 4.9,
+      "count": 510
+    },
+    "stock": 35,
+    "brand": "CuddleSoft",
+    "oldPrice": 29.4,
+    "reviewCount": 510,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "PuzzleMaster 1000-Piece Scenic Jigsaw Puzzle",
+    "description": "Challenging and beautifully illustrated landscape jigsaw puzzle made with sturdy recycled puzzle pieces.",
+    "price": 19.99,
+    "image": "/images/products/jigsaw_puzzle.jpg",
+    "category": "Toys and Games",
+    "rating": {
+      "rate": 4.6,
+      "count": 160
+    },
+    "stock": 40,
+    "brand": "PuzzleMaster",
+    "oldPrice": 23.99,
+    "reviewCount": 160,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "TrailBlazer Waterproof Camping Backpack",
+    "description": "Durable 40L hiking backpack featuring ergonomic support, multiple compartments, and rain cover.",
+    "price": 69.99,
+    "image": "/images/products/camping_backpack.jpg",
+    "category": "Sports and Outdoors",
+    "rating": {
+      "rate": 4.8,
+      "count": 270
+    },
+    "stock": 20,
+    "brand": "TrailBlazer",
+    "oldPrice": 83.99,
+    "reviewCount": 270,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "EcoFit Non-Slip Yoga Mat",
+    "description": "Extra-thick eco-friendly exercise yoga mat offering superior grip and joint cushioning for workouts.",
+    "price": 28.5,
+    "image": "/images/products/yoga_mat.jpg",
+    "category": "Sports and Outdoors",
+    "rating": {
+      "rate": 4.7,
+      "count": 340
+    },
+    "stock": 30,
+    "brand": "EcoFit",
+    "oldPrice": 34.2,
+    "reviewCount": 340,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "HydroFlow Insulated Stainless Steel Water Bottle",
+    "description": "Double-wall vacuum insulated water bottle that keeps drinks ice-cold for 24 hours or hot for 12 hours.",
+    "price": 24.99,
+    "image": "/images/products/water_bottle.jpg",
+    "category": "Sports and Outdoors",
+    "rating": {
+      "rate": 4.9,
+      "count": 480
+    },
+    "stock": 40,
+    "brand": "HydroFlow",
+    "oldPrice": 29.99,
+    "reviewCount": 480,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "ProGrip Adjustable Fitness Resistance Bands",
+    "description": "Set of stackable exercise resistance tubes with door anchor, handles, and ankle straps for home training.",
+    "price": 32.0,
+    "image": "/images/products/resistance_bands.jpg",
+    "category": "Sports and Outdoors",
+    "rating": {
+      "rate": 4.6,
+      "count": 210
+    },
+    "stock": 25,
+    "brand": "ProGrip",
+    "oldPrice": 38.4,
+    "reviewCount": 210,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "NightHawk LED Rechargeable Headlamp",
+    "description": "Ultra-bright waterproof headlamp with adjustable beam angles and motion sensor mode for camping and running.",
+    "price": 21.99,
+    "image": "/images/products/camping_headlamp.jpg",
+    "category": "Sports and Outdoors",
+    "rating": {
+      "rate": 4.8,
+      "count": 195
+    },
+    "stock": 35,
+    "brand": "NightHawk",
+    "oldPrice": 26.39,
+    "reviewCount": 195,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "AutoCare Digital Tire Pressure Monitor",
+    "description": "Portable electronic tire inflator and digital pressure gauge with fast inflation and auto-shutoff feature.",
+    "price": 45.0,
+    "image": "/images/products/tire_inflator.jpg",
+    "category": "Automotive",
+    "rating": {
+      "rate": 4.8,
+      "count": 290
+    },
+    "stock": 20,
+    "brand": "AutoCare",
+    "oldPrice": 54.0,
+    "reviewCount": 290,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "ArmorShield All-Weather Car Floor Mats",
+    "description": "Heavy-duty waterproof rubber floor mats designed to protect vehicle interior from dirt, mud, and spills.",
+    "price": 59.99,
+    "image": "/images/products/car_floor_mats.jpg",
+    "category": "Automotive",
+    "rating": {
+      "rate": 4.7,
+      "count": 230
+    },
+    "stock": 15,
+    "brand": "ArmorShield",
+    "oldPrice": 71.99,
+    "reviewCount": 230,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "DashCam Ultra HD 1080p Car Camera",
+    "description": "Wide-angle dashboard camera with night vision, loop recording, and G-sensor collision detection.",
+    "price": 79.99,
+    "image": "/images/products/dash_cam.jpg",
+    "category": "Automotive",
+    "rating": {
+      "rate": 4.9,
+      "count": 350
+    },
+    "stock": 18,
+    "brand": "DashCam",
+    "oldPrice": 95.99,
+    "reviewCount": 350,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "ProDetail Microfiber Car Cleaning Kit",
+    "description": "Comprehensive washing and detailing kit including ultra-absorbent microfiber towels, mitts, and wash sponge.",
+    "price": 27.5,
+    "image": "/images/products/car_cleaning_kit.jpg",
+    "category": "Automotive",
+    "rating": {
+      "rate": 4.6,
+      "count": 180
+    },
+    "stock": 30,
+    "brand": "ProDetail",
+    "oldPrice": 33.0,
+    "reviewCount": 180,
+    "condition": "New",
+    "freeDelivery": true
+  },
+  {
+    "title": "PowerBoost 12V Jump Starter & Power Bank",
+    "description": "Compact and safe portable car battery booster pack with built-in LED flashlight and USB charging ports.",
+    "price": 89.99,
+    "image": "/images/products/jump_starter.jpg",
+    "category": "Automotive",
+    "rating": {
+      "rate": 4.9,
+      "count": 410
+    },
+    "stock": 12,
+    "brand": "PowerBoost",
+    "oldPrice": 107.99,
+    "reviewCount": 410,
+    "condition": "New",
+    "freeDelivery": true
+  }
+]

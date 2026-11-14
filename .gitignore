@@ -1,1 +1,10 @@
-backend/.env
+#Environment variables
+Backend/.env
+#Dependencies
+Backend/node_modules/
+frontend/node_modules/
+dist/
+build/
+*.log
+.DS_Store
+Thumbs.db
