@@ -25,14 +25,17 @@ This is a full-stack e-commerce learning project. It was built to practice MERN 
 
 # Install dependencies
 npm install
+
 yarn install
 
 # Run in development
 npm run dev
+
 yarn run dev
 
 # Run in production
 npm start
+
 yarn start
 
 ## Project Purpose
