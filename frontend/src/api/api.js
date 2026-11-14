@@ -1,4 +1,4 @@
-const API_URL = "https://amazon-clone-cs0k.onrender.com";
+const API_URL = "https://amazon-clone-cs0k.onrender.com/api";
 
 // ====================
 // Products
