@@ -139,8 +139,6 @@ const initializePayment = async (req, res) => {
     );
 
     const chapaData = await chapaResponse.json();
-    console.log("Amazon txRef:", txRef);
-console.log("Chapa initialize response:", chapaData);
 
 
     const checkoutUrl =
@@ -179,7 +177,6 @@ console.log("Chapa initialize response:", chapaData);
 const verifyPayment = async (req, res) => {
   try {
     const txRef = req.query.tx_ref;
-    console.log("Returned tx_ref:",txRef);
     
 
     if (!txRef) {
@@ -225,7 +222,6 @@ const verifyPayment = async (req, res) => {
 
     const chapaData = await chapaResponse.json();
     const payment = chapaData.data;
-    console.log("FULL CHAPA VERIFY RESPONSE:", JSON.stringify(chapaData, null, 2));
 
     if (!chapaResponse.ok || !payment) {
       console.error("Chapa HTTP status:",chapaResponse.status);

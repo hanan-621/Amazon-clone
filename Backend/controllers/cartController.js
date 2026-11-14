@@ -6,15 +6,12 @@ const addToCart = async (req, res) => {
   try {
     const { productId, quantity } = req.body;
 
-     console.log("productId:", productId);
-     console.log("quantity:", quantity);
 
     const userId = req.user.userId;
 
     // Check if product exists
     const product = await Product.findById(productId);
 
-    console.log("Product found:", product);
 
     if (!product) {
       return res.status(404).json({
@@ -54,7 +51,7 @@ const addToCart = async (req, res) => {
       });
     }
 
-    console.log("Cart before save:", cart);
+  
 
     await cart.save();
 

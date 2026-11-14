@@ -6,7 +6,6 @@ const Product = require("../models/Product");
 
 const createOrder = async (req, res) => {
   try {
-    console.log("CREATE ORDER FUNCTION CALLED");
     const { paymentMethod, shippingAddress } = req.body;
     const userId = req.user.userId;
 
@@ -39,11 +38,7 @@ const createOrder = async (req, res) => {
     // First, validate all products and stock
     for (const cartItem of cart.items) {
       const product = await Product.findById(cartItem.product);
-      console.log("ORDER STOCK CHECK:", {
-  product: product?.title,
-  stock: product?.stock,
-  cartQuantity: cartItem.quantity,
-});
+      
 
       if (!product) {
         return res.status(404).json({
