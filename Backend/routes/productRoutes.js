@@ -21,7 +21,7 @@ router.get("/", getProducts);
 router.get("/search", searchProducts);
 
 // Seed products
-router.post("/seed", seedProducts);
+router.post("/seed",protect,admin, seedProducts);
 
 // Get single product
 router.get("/:id", getProductById);
@@ -30,9 +30,9 @@ router.get("/:id", getProductById);
 router.post("/", protect, admin, createProduct);
 
 // Update product
-router.put("/:id", updateProduct);
+router.put("/:id",protect,admin, updateProduct);
 
 // Delete product
-router.delete("/:id", deleteProduct);
+router.delete("/:id", protect, admin, deleteProduct);
 
 module.exports = router;
