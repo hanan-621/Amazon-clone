@@ -1,4 +1,4 @@
-const API_URL = "https://amazon-clone-cs0k.onrender.com/api";
+const API_URL = "http://localhost:5000/api";
 
 // ====================
 // Products

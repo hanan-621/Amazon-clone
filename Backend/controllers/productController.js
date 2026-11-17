@@ -71,8 +71,14 @@ const getProductById = async (req, res) => {
 
     res.status(200).json(product);
   } catch (error) {
+    if(error.name=== "CastError"){
+      return res.status(400).json({
+        message:"Invalid product ID"
+      });
+    }
+
     res.status(500).json({
-      message: error.message
+      message: "server error"
     });
   }
 };

@@ -178,23 +178,76 @@ const updateOrderStatus = async (req, res) => {
       });
     }
 
-    order.status = status;
+    //Prevent duplicate cancellation
+    if(order.status === "cancelled"){
+      return res.status(400).json({
+        success: false,
+        message:"Order is already cancelled",
+      });
+    }
 
-    await order.save();
+    //Prevent cancelling shipped or delivered orders
+    if(
+      status === "cancelled" &&
+    ["shipped","delivered"].includes(order.status)
+    ){
+      return res.status(400).json({
+        success: false,
+        message:"Shipped or delivered orders cannot be cancelled",
+      });
+    }
 
-    const updatedOrder = await Order.findById(order._id)
+
+    //Atomatically update order status
+    const updated=await
+    Order.findOneAndUpdate(
+      {
+        _id:order._id,
+        status:order.status,
+      },
+      {
+        $set:{status},
+      },
+      {new:true}
+    );
+
+    if(!updated){
+      return res.status(409).json({
+        success:false,
+        message:"Order was already updated.Please refresh.",
+      });
+    }
+
+    //Restore stock only once
+    if(status === "cancelled"){
+      for(const item of updated.items){
+        await Product.findByIdAndUpdate(item.product,{
+          $inc: {stock:item.quantity},
+        });
+      }
+    }
+
+    
+    const updatedOrder = await Order.findById(updated._id)
       .populate("user", "name email")
       .populate("items.product");
 
-    res.status(200).json({
+     return res.status(200).json({
       success: true,
       message: "Order status updated successfully",
       data: updatedOrder,
     });
   } catch (error) {
-    res.status(500).json({
+    if(error.name === "CastError"){
+      return res.status(400).json({
+        success:false,
+        message:"Invalid order ID",
+      });
+    }
+
+    return res.status(500).json({
       success: false,
-      message: error.message,
+      message: "Server error",
     });
   }
 };

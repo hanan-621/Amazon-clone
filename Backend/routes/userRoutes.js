@@ -33,7 +33,7 @@ router.get("/profile", protect, (req, res) => {
 });
 
 // Get User by ID
-router.get("/:id", getUserById);
+router.get("/:id",protect,admin, getUserById);
 
 // Admin: Update User Role
 router.put("/:id/role", protect, admin, updateUserRole);

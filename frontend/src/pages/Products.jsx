@@ -65,20 +65,20 @@ const Products = () => {
 
     // Price Filter
     .filter((product) => {
-      if (priceFilter === "under25") {
-        return product.price < 25;
+      if (priceFilter === "under2500") {
+        return product.price < 2500;
       }
 
-      if (priceFilter === "25to50") {
-        return product.price >= 25 && product.price <= 50;
+      if (priceFilter === "2500to5000") {
+        return product.price >= 2500 && product.price <= 5000;
       }
 
-      if (priceFilter === "50to100") {
-        return product.price > 50 && product.price <= 100;
+      if (priceFilter === "5000to10000") {
+        return product.price > 5000 && product.price <= 10000;
       }
 
-      if (priceFilter === "over100") {
-        return product.price > 100;
+      if (priceFilter === "over10000") {
+        return product.price > 10000;
       }
 
       return true;
@@ -249,52 +249,52 @@ const Products = () => {
                   <input
                     type="radio"
                     name="price"
-                    value="under25"
-                    checked={priceFilter === "under25"}
+                    value="under2500"
+                    checked={priceFilter === "under2500"}
                     onChange={(e) =>
                       setPriceFilter(e.target.value)
                     }
                   />
-                  Under 25ETB
+                  Under 2500ETB
                 </label>
 
                 <label className="flex gap-2">
                   <input
                     type="radio"
                     name="price"
-                    value="25to50"
-                    checked={priceFilter === "25to50"}
+                    value="2500to5000"
+                    checked={priceFilter === "2500to5000"}
                     onChange={(e) =>
                       setPriceFilter(e.target.value)
                     }
                   />
-                  25ETB - 50ETB
+                  2500ETB - 5000ETB
                 </label>
 
                 <label className="flex gap-2">
                   <input
                     type="radio"
                     name="price"
-                    value="50to100"
-                    checked={priceFilter === "50to100"}
+                    value="5000to10000"
+                    checked={priceFilter === "5000to10000"}
                     onChange={(e) =>
                       setPriceFilter(e.target.value)
                     }
                   />
-                  50ETB - 100ETB
+                  5000ETB - 10000ETB
                 </label>
 
                 <label className="flex gap-2">
                   <input
                     type="radio"
                     name="price"
-                    value="over100"
-                    checked={priceFilter === "over100"}
+                    value="over10000"
+                    checked={priceFilter === "over10000"}
                     onChange={(e) =>
                       setPriceFilter(e.target.value)
                     }
                   />
-                  Over 100ETB
+                  Over 10000ETB
                 </label>
 
               </div>

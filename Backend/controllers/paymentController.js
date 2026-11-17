@@ -254,6 +254,29 @@ const verifyPayment = async (req, res) => {
       });
     }
 
+    for(const item of order.items){
+      const updatedProduct = await Product.findOneAndUpdate(
+        {
+          _id: item.product,
+          stock: { $gte: item.quantity },
+        },
+        {
+          $inc: { stock: -item.quantity },
+        },
+        { new: true }
+      );
+
+      if(!updatedProduct){
+        return res.status(409).json({
+           success: false,
+           message:"Insufficient stock or product not found",
+        });
+      }
+
+
+      console.log("STOCK REDUCED :", updatedProduct.stock);
+    }
+
     order.paymentStatus = "paid";
     order.status = "processing";
 
@@ -285,6 +308,9 @@ const verifyPayment = async (req, res) => {
 
 
 const createCashOnDeliveryOrder = async (req, res) => {
+  const reducedItems =[];
+  let order =null;
+
   try {
     const userId = req.user.userId || req.user.id || req.user._id;
 
@@ -309,7 +335,7 @@ const createCashOnDeliveryOrder = async (req, res) => {
     const orderItems = [];
     let totalAmount = 0;
 
-    // Validate products and stock before creating the order
+    // Validate all cart items first
     for (const item of cart.items) {
       const product = await Product.findById(item.product);
 
@@ -327,7 +353,7 @@ const createCashOnDeliveryOrder = async (req, res) => {
         });
       }
 
-      // Stock validation
+      
       if (item.quantity > product.stock) {
         return res.status(400).json({
           success: false,
@@ -348,7 +374,36 @@ const createCashOnDeliveryOrder = async (req, res) => {
 
     totalAmount = Number(totalAmount.toFixed(2));
 
-    // Create order only after all stock validations pass
+    //Atomically reduce stock
+    for(const item of orderItems){
+      const updatedProduct = await Product.findOneAndUpdate(
+        {
+          _id:item.product,
+          stock:{$gte:item.quantity},
+        },
+        {
+          $inc: { stock: -item.quantity },
+        },
+        { new: true }
+      );
+
+      if(!updatedProduct){
+        throw new Error(
+          `Insufficient stock for ${item.title}`
+        );
+      }
+
+      reducedItems.push(item);
+
+      console.log("COD STOCK REDUCED:",
+        {
+          product:item.title,
+          remainingStock:
+          updatedProduct.stock,
+        });
+    }
+
+    // Create order
     const order = await Order.create({
       user: userId,
       items: orderItems,
@@ -360,7 +415,7 @@ const createCashOnDeliveryOrder = async (req, res) => {
       status: "pending",
     });
 
-    // Clear cart only after successful order creation
+    // Clear cart  after successful order 
     await Cart.findOneAndUpdate(
       { user: userId },
       { $set: { items: [] } }
@@ -374,9 +429,19 @@ const createCashOnDeliveryOrder = async (req, res) => {
   } catch (error) {
     console.error("Cash on delivery error:", error);
 
+    //Restore stock if order creation fails
+    if(!order){
+      for(const item of reducedItems){
+         await
+         Product.findByIdAndUpdate(item.product,{
+          $inc:{stock:item.quantity},
+         });
+      }
+    }
+
     return res.status(500).json({
       success: false,
-      message: "Failed to create order",
+      message: error.message || "Failed to create order",
     });
   }
 };
@@ -387,4 +452,4 @@ module.exports = {
   initializePayment,
   verifyPayment,
   createCashOnDeliveryOrder,
-};
+  };
